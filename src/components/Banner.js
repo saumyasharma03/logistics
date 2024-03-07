@@ -53,10 +53,9 @@ export const Banner = () => {
                         <h1>{" E-commerce solution for all"}<br /><span id="element" className="=wrap">{text}</span></h1>
                         <h3></h3>
                         <p id="para">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Exc
-                        </p>
+                        The logistic tracking app, powered by open-source APIs, offers small merchants a robust solution for managing shipments. It streamlines logistics operations, enabling merchants to send and track shipments efficiently. With user-friendly features and seamless integration, the app enhances operational efficiency and ensures timely deliveries, ultimately improving customer satisfaction                        </p>
                         <button className="vvd">
-                            <a href="#sectionId" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <a href="/loctrack" style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <div>Start Tracking</div>
                                 <ArrowRightCircle size={25} />
                             </a>

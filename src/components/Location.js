@@ -44,7 +44,7 @@ export const Location = () => {
   };
 
   return (
-    <div className='map'>
+    <div className='map-container'>
       <h1 >Map with Path</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="startPlace">Start Place:</label>
