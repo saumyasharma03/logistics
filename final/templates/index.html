@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with Path</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.2.12/leaflet-routing-machine.css" />
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Map with Path</h1>
+    <!-- <button><a href = "http://localhost:3000/"></a>Back</button> -->
+    <form id="coordinatesForm">
+        <label for="startLat">Start Latitude:</label>
+        <input type="text" id="startLat" name="startLat" placeholder="Enter start latitude"><br><br>
+
+        <label for="startLon">Start Longitude:</label>
+        <input type="text" id="startLon" name="startLon" placeholder="Enter start longitude"><br><br>
+
+        <label for="endLat">End Latitude:</label>
+        <input type="text" id="endLat" name="endLat" placeholder="Enter end latitude"><br><br>
+
+        <label for="endLon">End Longitude:</label>
+        <input type="text" id="endLon" name="endLon" placeholder="Enter end longitude"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.2.12/leaflet-routing-machine.js"></script>
+    <script>
+        document.getElementById('coordinatesForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var startLat = parseFloat(document.getElementById('startLat').value);
+            var startLon = parseFloat(document.getElementById('startLon').value);
+            var endLat = parseFloat(document.getElementById('endLat').value);
+            var endLon = parseFloat(document.getElementById('endLon').value);
+
+            var map = L.map('map').setView([startLat, startLon], 5);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(map);
+
+            var control = L.Routing.control({
+                waypoints: [
+                    L.latLng(startLat, startLon),
+                    L.latLng(endLat, endLon)
+                ],
+                routeWhileDragging: true
+            }).addTo(map);
+        });
+    </script>
+</body>
+</html>
