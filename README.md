@@ -12,7 +12,8 @@ addresses to map points, computing motorable distances, or paths interactively o
 
 # Solution Video:
 
-Uploading LogisticsSoln.mp4…
+https://github.com/saumyasharma03/logistics/assets/143929552/c4627ab9-5d62-404f-831d-ffee58550772
+
 
 # Highlights
 
