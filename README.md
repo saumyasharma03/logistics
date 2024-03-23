@@ -1,3 +1,41 @@
+# Problem Statement:
+The aim is to democratize the e-commerce space in India, incorporating a
+diverse array of Buyer Apps and Seller Apps. To scale efficiently, it is essential
+to employ open-source components, reducing costs and ensuring
+accessibility for even the smallest Buyer and Seller Apps. The objective is to
+
+enable these apps to harness the power of open-source maps for e-
+commerce functionalities. This includes creating polygons of points,
+
+generating motorable paths between two points, reversegeocoding
+addresses to map points, computing motorable distances, or paths interactively or via API.
+
+# Solution Video:
+
+Uploading LogisticsSoln.mp4…
+
+# Highlights
+
+Landing Page:
+![image](https://github.com/saumyasharma03/logistics/assets/143929552/4f5424c5-2bb4-4fed-aa6f-2fe52e589d8a)
+
+Track Location:
+![image](https://github.com/saumyasharma03/logistics/assets/143929552/0f8a8698-5495-4927-80c1-2099051a836f)
+![image](https://github.com/saumyasharma03/logistics/assets/143929552/5e9651f1-ddb7-4544-a90a-924120df23b1)
+
+Reverse Geocoding:
+![image](https://github.com/saumyasharma03/logistics/assets/143929552/6cfb182b-d9c9-4792-9645-fc8bae7a25ca)
+
+
+#Features:
+
+User Authentication
+Tracking Location
+Reverse Geocoding
+Generating motorable paths
+Rerouting Efficiently
+Time Estimation and Guidance for path
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
